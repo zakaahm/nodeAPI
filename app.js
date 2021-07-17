@@ -78,7 +78,7 @@ app.get('/surah/:id' ,  (req, res) => {
   })
   
 
-  app.listen(3000 , (req, res) => {
+  app.listen(process.env.PORT || 3000 , (req, res) => {
 
     console.log("Express is running");
 
